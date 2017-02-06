@@ -7,11 +7,11 @@ import java.sql.*;
  */
 public class JDBCTest {
     public static void main(String[] args) throws Exception {
-        Class.forName("")       ;
+        Class.forName("");
         Connection connection = DriverManager.getConnection("");
         Statement statement = connection.createStatement();
         ResultSet resultSet = statement.executeQuery("");
-        while(resultSet.next() ){
+        while (resultSet.next()) {
             System.out.println(resultSet.getString(1));
         }
     }

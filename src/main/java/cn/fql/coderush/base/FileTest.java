@@ -9,7 +9,7 @@ public class FileTest {
     public static void main(String[] args) throws Exception {
         File file = new File("/Users/fuquanlin/IdeaProjects/coderush/test.txt");
         FileWriter fileWriter = new FileWriter(file);
-        BufferedWriter bufferedWriter = new BufferedWriter(fileWriter)  ;
+        BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
         bufferedWriter.write("aaaa");
         bufferedWriter.newLine();
 
@@ -30,9 +30,10 @@ public class FileTest {
         FileReader fileReader = new FileReader(file);
         BufferedReader bufferedReader = new BufferedReader(fileReader);
         String s = null;
-        while( (s = bufferedReader.readLine())!=null){
+        while ((s = bufferedReader.readLine()) != null) {
             System.out.println(s);
-        };
+        }
+        ;
 
     }
 }

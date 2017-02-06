@@ -31,15 +31,15 @@ public class TreeScan {
         }
     }
 
-    public static void travel2(Node root){
+    public static void travel2(Node root) {
         Stack<Node> stack = new Stack<>();
         Node current = root;
-        while(current!=null||!stack.empty()) {
-            if(current!=null){
-                stack.push(current) ;
+        while (current != null || !stack.empty()) {
+            if (current != null) {
+                stack.push(current);
                 current = current.getLeft();
-            }   else{
-               current = stack.pop();
+            } else {
+                current = stack.pop();
                 System.out.println(current.getData());
                 current = current.getRight();
             }

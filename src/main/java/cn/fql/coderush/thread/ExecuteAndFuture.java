@@ -20,7 +20,7 @@ public class ExecuteAndFuture {
             e.printStackTrace();
         }
         try {
-            System.out.println(future.get()+"");
+            System.out.println(future.get() + "");
         } catch (InterruptedException e) {
             e.printStackTrace();
         } catch (ExecutionException e) {

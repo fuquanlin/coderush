@@ -10,7 +10,7 @@ public class Factory {
             return new Tiger();
         } else if ("rabbit".equals(name)) {
             return new Rabbit();
-        }   else{
+        } else {
             return null;
         }
     }
